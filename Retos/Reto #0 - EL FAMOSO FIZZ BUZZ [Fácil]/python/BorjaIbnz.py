@@ -8,20 +8,12 @@
 #
 
 
-num = 1
-
-while num <= 100:
-    
-    if num % 3 == 0 and num % 5 == 0:
-        # print(num, "-> fizzbuzz")
+for i in range(1,101):
+    if i % 3 == 0 and i % 5 == 0:
         print("fizzbuzz")
-    elif num % 5 == 0:
-        # print(num, "-> buzz")
-        print("buzz")
-    elif num % 3 == 0:
-        # print(num, "-> fizz")
+    elif i % 3 == 0:
         print("fizz")
+    elif i % 5 == 0:
+        print("buzz")
     else:
-        print(num)
-    
-    num += 1
+        print(i)
